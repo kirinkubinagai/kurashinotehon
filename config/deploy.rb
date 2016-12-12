@@ -28,8 +28,6 @@ set :rbenv_ruby, '2.3.1'
 #出力するログのレベル。
 set :log_level, :debug
 
-set :bundle_flags, "--quiet --binstubs --shebang ruby-local-exec" #不要な処理を行わないようにする
-
 namespace :deploy do
   desc 'Restart application'
   task :restart do
@@ -67,8 +65,6 @@ namespace :deploy do
 end# config valid only for current version of Capistrano
 # lock '3.6.1'
 
-set :application, 'kurashinotehon'
-set :repo_url, 'https://github.com/kirinkubinagai/kurashinotehon.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

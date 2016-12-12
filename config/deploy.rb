@@ -8,7 +8,7 @@ set :application, 'kurashinotehon'
 set :repo_url, 'https://github.com/kirinkubinagai/kurashinotehon.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
-set :branch, 'master'
+set :branch, 'deploy'
 
 # deploy先のディレクトリに変更してください
 set :deploy_to, '/var/www/kurashinotehon'
@@ -63,7 +63,7 @@ namespace :deploy do
     end
   end
 end# config valid only for current version of Capistrano
-lock '3.6.1'
+# lock '3.6.1'
 
 set :application, 'kurashinotehon'
 set :repo_url, 'https://github.com/kirinkubinagai/kurashinotehon.git'

@@ -2,16 +2,16 @@
 # lock '3.4.0'
 
 # デプロイするアプリケーション名に変更してください
-set :application, 'sample'
+set :application, 'kurashinotehon'
 
 # cloneするgitのレポジトリに変更してください
-set :repo_url, 'git@github.com:Testtarou/hoge.git'
+set :repo_url, 'https://github.com/kirinkubinagai/kurashinotehon.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, 'master'
 
 # deploy先のディレクトリに変更してください
-set :deploy_to, '/var/www/sample'
+set :deploy_to, '/var/www/kurashinotehon'
 
 # シンボリックリンクをはるファイル。(※後述)
 set :linked_files, fetch(:linked_files, []).push('config/secrets.yml')
@@ -65,8 +65,8 @@ namespace :deploy do
 end# config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'kurashinotehon'
+set :repo_url, 'https://github.com/kirinkubinagai/kurashinotehon.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

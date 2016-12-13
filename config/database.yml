@@ -57,5 +57,5 @@ test:
 production:
   <<: *default
   database: kurashinotehon_production
-  username: kurashinotehon
-  password: <%= ENV['KURASHINOTEHON_DATABASE_PASSWORD'] %>
+  username: root
+  password:

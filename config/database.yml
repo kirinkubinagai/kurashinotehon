@@ -17,12 +17,12 @@ default: &default
   password:
   socket: /var/lib/mysql/mysql.sock
 
-production:
-  <<: *default
-  database: kurashinotehon_production
-  username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+# production:
+#   <<: *default
+#   database: kurashinotehon_production
+#   username: root
+#   password:
+#   socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
